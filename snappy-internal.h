@@ -108,7 +108,7 @@ static inline std::pair<size_t, bool> FindMatchLength(const char* s1,
  
   _mm_prefetch(s1, _MM_HINT_T1);
   _mm_prefetch(s2, _MM_HINT_T1);
- 
+
   // This block isn't necessary for correctness; we could just start looping
   // immediately.  As an optimization though, it is useful.  It creates some not
   // uncommon code paths that determine, without extra effort, whether the match
